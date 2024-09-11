@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.ArrayList;
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,String> countries=new HashMap();
+		countries.put("USA","WDC");
+		countries.put("India","Delhi");
+		countries.put("Russia", "Mascow");
+		ArrayList<String> car=new ArrayList();
+		car.add("Audi");
+		car.add("Benz");
+		car.add("ferrari");
+		car.add("tesla");
+		System.out.println(car.contains("Audi"));
+		System.out.println(countries.containsKey("India"));
+		System.out.println(countries.containsValue("tokyo"));
+		countries.replace("India", "TamilNadu");
+		/*for(String i:car)
+		{
+			System.out.println(i);
+		}*/
+		for(String i:countries.keySet())
+		{
+			System.out.println(i+" "+countries.get(i));
+		}
+		
+		
+	}
+
+}
