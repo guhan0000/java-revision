@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    HashMap<String,String>countries=new HashMap();
+	    countries.put("India","New Delhi");
+	    countries.put("Russia","Moscow");
+	    countries.put("China","Beijing");
+	    countries.put("Japan","Tokyo");
+	  int len=  countries.size();
+	  //  countries.get("Russia");
+	    System.out.println(countries.get("Russia"));
+	    System.out.println(countries.remove("India"));
+		System.out.println(countries);
+		System.out.println(len);
+		System.out.println(countries.size());
+		countries.clear();
+		System.out.println(countries.size());
+		
+		
+	}
+}
